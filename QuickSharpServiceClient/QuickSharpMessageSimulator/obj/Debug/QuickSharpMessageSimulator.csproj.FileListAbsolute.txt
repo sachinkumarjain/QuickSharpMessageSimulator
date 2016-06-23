@@ -1,0 +1,16 @@
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\bin\Debug\QuickSharpMessageSimulator.dll.config
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\bin\Debug\QuickSharpMessageSimulator.dll
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\bin\Debug\QuickSharpMessageSimulator.pdb
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\bin\Debug\Castle.Core.dll
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\bin\Debug\Castle.Windsor.dll
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\bin\Debug\EntityFramework.dll
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\bin\Debug\EntityFramework.SqlServer.dll
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\bin\Debug\Newtonsoft.Json.dll
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\bin\Debug\Castle.Core.xml
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\bin\Debug\Castle.Windsor.xml
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\bin\Debug\EntityFramework.xml
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\bin\Debug\EntityFramework.SqlServer.xml
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\bin\Debug\Newtonsoft.Json.xml
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\obj\Debug\QuickSharpMessageSimulator.dll
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\obj\Debug\QuickSharpMessageSimulator.pdb
+C:\git\QuickSharpServiceClient\QuickSharpMessageSimulator\obj\Debug\QuickSharpMessageSimulator.csprojResolveAssemblyReference.cache

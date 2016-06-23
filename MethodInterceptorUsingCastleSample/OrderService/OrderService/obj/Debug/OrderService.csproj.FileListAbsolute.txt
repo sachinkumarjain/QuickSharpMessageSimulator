@@ -1,0 +1,10 @@
+C:\git\MethodInterceptorUsingCastleSample\OrderService\OrderService\bin\Debug\OrderService.exe.config
+C:\git\MethodInterceptorUsingCastleSample\OrderService\OrderService\bin\Debug\OrderService.exe
+C:\git\MethodInterceptorUsingCastleSample\OrderService\OrderService\bin\Debug\OrderService.pdb
+C:\git\MethodInterceptorUsingCastleSample\OrderService\OrderService\obj\Debug\OrderService.csprojResolveAssemblyReference.cache
+C:\git\MethodInterceptorUsingCastleSample\OrderService\OrderService\obj\Debug\OrderService.exe
+C:\git\MethodInterceptorUsingCastleSample\OrderService\OrderService\obj\Debug\OrderService.pdb
+C:\git\MethodInterceptorUsingCastleSample\OrderService\OrderService\bin\Debug\Castle.Core.dll
+C:\git\MethodInterceptorUsingCastleSample\OrderService\OrderService\bin\Debug\Castle.Windsor.dll
+C:\git\MethodInterceptorUsingCastleSample\OrderService\OrderService\bin\Debug\Castle.Core.xml
+C:\git\MethodInterceptorUsingCastleSample\OrderService\OrderService\bin\Debug\Castle.Windsor.xml
