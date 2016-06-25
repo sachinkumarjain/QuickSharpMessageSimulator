@@ -31,7 +31,7 @@ namespace Dell.Service.API.Client
 
             using (var client = ObjectFactory.Container.GetInstance<IApiContainer>().Create())
             {
-                client.GetAsync<object>(new Uri(url));
+                var resp = client.GetAsync<object>(new Uri(url)).Result;
             }
             return;
             //var demo = QuickSharpMessageSimulator.IoC.ObjectFactory.Container.GetInstance<ISerivceClientDemo>();

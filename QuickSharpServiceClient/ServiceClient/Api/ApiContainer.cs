@@ -1,5 +1,6 @@
 ﻿
 using Dell.Service.API.Client.IoC;
+using QuickSharpMessageSimulator.IoC;
 namespace Dell.Service.API.Client.Api
 {
     public interface IApiContainer
@@ -9,17 +10,16 @@ namespace Dell.Service.API.Client.Api
 
     public class ApiContainer : IApiContainer
     {
-        private readonly IMessageSimulationContainer _container;
+        private readonly IApiClient _apiClient;
 
-        public ApiContainer(IMessageSimulationContainer container)
+        public ApiContainer(IApiClient apiClient)
         {
-            _container = container;
+            _apiClient = apiClient;
         }
 
         public IApiClient Create()
         {
-            var client = _container.GetInstance<IApiClient>();
-            return client;
+            return _apiClient;
         }
     }
 }

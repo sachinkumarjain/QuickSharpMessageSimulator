@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <components>
+    <component id="serviceRepository"
+      service="QuickSharpMessageSimulator.Repositories.IServiceRepository, QuickSharpMessageSimulator"
+      type="QuickSharpMessageSimulator.Repositories.ServiceRepository, QuickSharpMessageSimulator"
+      lifestyle="singleton">
+    </component>
+    <component id="messageSimulator"
+    service="QuickSharpMessageSimulator.IMessageSimulator, QuickSharpMessageSimulator"
+    type="QuickSharpMessageSimulator.MessageSimulator, QuickSharpMessageSimulator"
+    lifestyle="singleton">
+    </component>
+    <component id="serviceContext"
+    type="QuickSharpMessageSimulator.DbContexts.ServiceContext, QuickSharpMessageSimulator"
+    lifestyle="singleton">
+    </component>
+    <component id="messageSimulatorIntercepter"
+    type="QuickSharpMessageSimulator.Intercepters.MessageSimulatorIntercepter, QuickSharpMessageSimulator"
+    lifestyle="singleton">
+    </component>
+    
+    <!--ApiClient-->
+    <component id="apiClient"
+    service="Dell.Service.API.Client.Api.IApiClient, Dell.Service.API.Client"
+    type="Dell.Service.API.Client.Api.ApiClient, Dell.Service.API.Client"
+    lifestyle="thread">
+    </component>
+  </components>
+</configuration>

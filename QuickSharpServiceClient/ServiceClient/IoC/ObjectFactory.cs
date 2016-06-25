@@ -36,13 +36,13 @@ namespace Dell.Service.API.Client.IoC
                     s.AddAllTypesOf<ApiController>();
                 });
 
-                i.For<IWindsorContainer>().Add(new WindsorContainer());
+
+                //Message Simulator registry
                 i.For<IMessageSimulateRegistry>().Add<MessageSimulateRegistry>();
-                i.For<IMessageSimulationContainer>().Add<MessageSimulatorContainer>();
 
-                i.AddRegistry<ServiceRegistry>();
+                //if used WithDefaultConventions setting and .Use() is required here.
+                i.For<IApiClient>().Use(MessageSimulateRegistry.Instance<IApiClient>());
             });
-
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Castle.DynamicProxy;
 using Castle.MicroKernel.Registration;
 using Castle.Windsor;
+using Castle.Windsor.Installer;
 using QuickSharpMessageSimulator.DbContexts;
 using QuickSharpMessageSimulator.Intercepters;
 using QuickSharpMessageSimulator.Interceptors;
@@ -25,25 +26,25 @@ namespace QuickSharpMessageSimulator.IoC
 
         public IWindsorContainer Container { get { return _container; } }
 
-        //public static SystemRegistry Instance
-        //{
-        //    get
-        //    {
-        //        var generator = new ProxyGenerator();
-        //        return generator.CreateClassProxy<SystemRegistry>();
-        //    }
-        //}
-
-        public MessageSimulateRegistry(IWindsorContainer container)
+        public static T Instance<T>()
         {
-            this._container = container;
-            //this._container = new WindsorContainer();
-            this._container.Register(Component.For<IServiceRepository>().ImplementedBy<ServiceRepository>());
-            this._container.Register(Component.For<IMessageSimulator>().ImplementedBy<MessageSimulator>());
-            this._container.Register(Component.For<ISerivceClientDemo>().ImplementedBy<SerivceClientDemo>());
+            var generator = new ProxyGenerator();
+            var ms = generator.CreateClassProxy<MessageSimulateRegistry>();
+            return ms.GetInstance<T>();
+        }
 
-            this._container.Register(Component.For<ServiceContext>());
-            this._container.Register(Component.For<MessageSimulatorIntercepter>());
+        public MessageSimulateRegistry()
+        {
+            //this._container = container;
+            this._container = new WindsorContainer();
+            _container.Install(Configuration.FromXmlFile("Configuration\\services.xml"));
+
+            //this._container = new WindsorContainer();
+            //this._container.Register(Component.For<IServiceRepository>().ImplementedBy<ServiceRepository>());
+            //this._container.Register(Component.For<IMessageSimulator>().ImplementedBy<MessageSimulator>());
+
+            //this._container.Register(Component.For<ServiceContext>());
+            //this._container.Register(Component.For<MessageSimulatorIntercepter>());
 
             //match interceptor with concrete classes
             this._container.Kernel.ProxyFactory.AddInterceptorSelector(new ServiceManagerPointcut());

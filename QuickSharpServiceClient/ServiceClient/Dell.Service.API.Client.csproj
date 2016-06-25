@@ -52,8 +52,8 @@
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="StructureMap, Version=4.2.0.402, Culture=neutral, processorArchitecture=MSIL">
@@ -122,11 +122,9 @@
     <Compile Include="Extensions\NullableExtension.cs" />
     <Compile Include="Extensions\ObjectExtensions.cs" />
     <Compile Include="Extensions\StringExtension.cs" />
-    <Compile Include="IoC\MessageSimulatorContainer.cs" />
     <Compile Include="IoC\ServiceActivator.cs" />
     <Compile Include="IoC\StructureMapDependencyResolver.cs" />
     <Compile Include="IoC\ObjectFactory.cs" />
-    <Compile Include="IoC\ServiceRegistry.cs" />
     <Compile Include="Mappers\ServiceDataMapper.cs" />
     <Compile Include="Mappers\ServiceUrlMapper.cs" />
     <Compile Include="Models\Api\ServiceDataViewModel.cs" />
@@ -140,6 +138,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Configuration\services.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Home.html" />
   </ItemGroup>
   <ItemGroup>
